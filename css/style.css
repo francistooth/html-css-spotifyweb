@@ -19,6 +19,10 @@ a {
     background-color: white;
 }
 
+.color-gray {
+    color: #757575;
+}
+
 .bg-upgrade {
     background-color: #080b12;
 }
@@ -68,6 +72,20 @@ section.left-nav {
 
 b.color-white {
     display: inline-block;
+}
+
+a.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 0px 10px;
+}
+
+a.main-nav:hover {
+    border-left: 2px solid limegreen;
+}
+
+a.main-nav:hover > * {
+    color: white;
 }
 
 
