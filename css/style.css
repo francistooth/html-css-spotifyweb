@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* utils */
+
+.color-white {
+    color: white;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-upgrade {
+    background-color: #080b12;
+}
+
+/* borders */
+
+
+/* logo */
+ 
+.logo-img {
+    width: 200px;
+    padding: 20px 20px;
+}
+
+/* main section */
+
+/* main container */
+
+.main-container {
+    display: flex;
+}
+
+/* left nav section */
+
+section.left-nav {
+    min-width: 300px;
+    height: 90vh;
+    background: black;
+}
+
+/* right container */
+
+section.right-container {
+    min-width: calc(100% - 300px);
+    height: 90vh;
+    background: #141922;
+}
+
+/* upgrade plan */
+
+div.upgrade {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button-upgrade {
+    border: 1px solid white;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-right: 10px;
+}
+
+/* player */
+
+section.player {
+    width: 100%;
+    height: 10vh;
+    background: #282828;
+}
