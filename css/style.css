@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 /* utils */
 
 .color-white {
@@ -27,6 +31,24 @@ a {
     background-color: #080b12;
 }
 
+/* padding */
+
+.padding-bottom-30 {
+    padding-bottom: 30px;
+}
+
+.padding-bottom-10 {
+    padding-bottom: 10px;
+}
+
+.padding-right-10 {
+    padding-right: 10px;
+}
+
+.padding-left-10 {
+    padding-left: 10px;
+}
+
 /* borders */
 
 /* main section */
@@ -41,14 +63,27 @@ a {
 
 section.left-nav {
     min-width: 300px;
-    height: 90vh;
+    min-height: 90vh;
     background: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+div.container-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
 }
 
 /* padding left section */
 
 .padding-nav {
     padding: 10px 20px;
+}
+
+.margin-nav {
+    margin: 10px 20px;
 }
 
 /* logo */
@@ -81,13 +116,50 @@ a.main-nav {
 }
 
 a.main-nav:hover {
-    border-left: 2px solid limegreen;
+    border-left: 3px solid #b3ff30;
 }
 
-a.main-nav:hover > * {
+a.main-nav:hover > *, .playlist-nav-item:hover a{
     color: white;
 }
 
+/* plus button */
+
+.plus-button {
+    font-size: 50px;
+}
+
+a.plus-div, a.install-button {
+    display: flex;
+    align-items: center;
+}
+
+a.plus-div:hover > * {
+    color: white;
+}
+
+/* playlist list */
+
+/* .playlist-nav {
+    
+} */
+
+.playlist-list {
+    overflow-y: auto;
+}
+
+/* install and account */
+
+a.install-button {
+    justify-self: flex-end;
+    border-bottom: 1px solid gray;
+}
+
+
+a.install-button > img {
+    width: 10px;
+    height: 10px;
+}
 
 /* right container */
 
@@ -115,10 +187,18 @@ div.upgrade {
     margin-right: 10px;
 }
 
+.button-upgrade:hover {
+    padding: 20px 60px;
+    border-radius: 30px;
+}
+
 /* player */
 
 section.player {
     width: 100%;
     height: 10vh;
     background: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
